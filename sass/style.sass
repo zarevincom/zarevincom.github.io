@@ -261,11 +261,70 @@ header
     position: absolute
     right: 270px
     mix-blend-mode: multiply
+    z-index: 0
 
-.whatfor
+.manage
+    position: static
     height: 660px
     width: 1445px
     background: #EDF2F6
+    padding-top: 58px
+    .container
+        margin-left: 26.4%
+    &_heading
+        color: #FF3D00
+        font-family: 'Exo', sans-serif
+        font-weight: 600
+        font-size: 36px
+    &_wrapper
+        display: flex
+        justify-content: space-between
+    &_functions
+        display: flex
+        flex-direction: column
+        margin-top: 80px
+        &_object
+            height: 75px
+            width: 100%
+            display: flex
+            align-items: center
+            &:nth-child(2),
+            &:last-child
+                margin-top: 54px
+            
+            &_text
+                width: 40%
+                margin-left: 16px
+            &_heading
+                color: #353535
+                font-family: Roboto
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                margin-bottom: 8px
+            &_descr
+                color: #697885
+                font-family: Roboto
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 120%
+            &_icon
+                display: flex
+                width: 70px
+                height: 70px
+                background-color: #FF3D00
+                justify-content: center
+                align-items: center
+                border-radius: 100%
+    &_phone
+        position: static
+        z-index: 1
+        margin-right: 68px
+        margin-top: -58px
+        text-align: center
+
+
             
             
             
