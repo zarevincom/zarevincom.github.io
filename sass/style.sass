@@ -25,7 +25,25 @@ body
             align-items: center
             justify-content: space-between
             .button-img
-                margin-right: -13px
+                &::before
+                    content: ""
+                    display: block
+                    width: 30px
+                    height: 3px
+                    background: #ffffff
+                    position: absolute
+                    margin-top: 8px
+                    margin-left: -11px
+                &::after
+                    content: ""
+                    display: block
+                    border-right: 3px solid #ffffff
+                    border-bottom: 3px solid #ffffff
+                    transform: rotate(-45deg)
+                    width: 16px
+                    height: 16px
+                    position: static
+                    border-radius: 2px
         border: none
 .container
     max-width: 1140px
@@ -265,7 +283,7 @@ header
 
 .manage
     position: static
-    height: 660px
+    height: 570px
     width: 1445px
     background: #EDF2F6
     padding-top: 58px
@@ -321,8 +339,139 @@ header
         position: static
         z-index: 1
         margin-right: 68px
-        margin-top: -58px
+        margin-top: -130px
         text-align: center
+
+.forwho
+    margin-top: 90px
+    position: relative
+    height: 660px
+    width: 1522px
+    background: #FF3D00
+    margin-left: 20%
+    .container
+        margin-left: 30%
+    &_head-image
+        position: absolute
+        mix-blend-mode: multiply
+        top: -40px
+        left: -100px
+        img
+            width: 552px
+            height: 754px
+    &_wrapper
+        &_heading
+            padding-top: 92px
+            font-family: Exo, sans-serif
+            font-size: 36px
+            font-style: normal
+            font-weight: 500
+            line-height: 40px
+            color: #fff
+        &_descr
+            margin-top: 85px
+            font-family: Exo, sans-serif
+            font-size: 16px
+            font-style: normal
+            font-weight: 300
+            line-height: 20px
+            width: 500px
+            color: #fff
+            p:first-child
+                margin-bottom: 30px
+        .get-access
+            background-color: #000
+            margin-top: 85px
+    .dna
+        position: absolute
+        right: 236px
+        bottom: -850px
+        mix-blend-mode: multiply
+        z-index: 0
+
+.beginning
+    position: relative
+    height: 730px
+    &_heading
+        margin-top: 108px
+        font-family: Exo, sans-serif
+        font-size: 36px
+        font-style: normal
+        font-weight: 500
+        color: #FF3D00
+    &_wrapper
+        margin-top: 95px
+        display: flex
+
+    &_content
+        border-left: 2px solid #D2DDE6
+        width: 220px
+        height: 120px
+        display: relative
+        &_heading
+            margin-right: 90px
+            margin-left: 7px
+            font-family: Exo, sans-serif
+            font-size: 12px
+            font-style: normal
+            font-weight: 600
+            line-height: 14px
+        &::after
+            content: ""
+            display: block
+            height: 6px
+            background: #FF3D00
+            width: 100%
+            margin-top: 106px
+        &::before
+            content: ""
+            display: inline-block
+            position: absolute
+            height: 16px
+            width: 16px
+            border-radius: 100%
+            background: #FF3D00
+            margin-left: -9px
+            margin-top: 129px
+        &:nth-child(2)
+            &::before
+                content: ""
+                display: inline-block
+                width: 30px
+                height: 30px
+                border-radius: 100%
+                border: 7px solid #FF3D00
+                background: #fff
+                box-sizing: border-box
+                margin-left: -16px
+                margin-top: 123px
+    &_logo
+        display: inline-block
+        width: 55.5px
+        height: 55.5px
+        background: conic-gradient(from 180deg at 50% 50%, #5061BD 0deg, #75E3F2 360deg);
+        border-radius: 100%
+        margin-top: 108px
+        &::after
+            position: absolute
+            display: flex
+            flex-direction: column-reverse
+            width: 149px
+            height: 142px
+            content: "Получаете результат"
+            font-family: Exo, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 22px
+            color: #FF3D00
+            border-right: 2px solid #FF3D00
+            padding-right: 10px
+            margin-top: 56px
+            margin-left: -133px
+
+
+
 
 
             
