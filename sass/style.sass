@@ -1,3 +1,8 @@
+$main-color: #FF3D00
+$main-grey: #EDF2F6
+$second-grey: #A6B6C2
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap')
+    
 *
     padding: 0
     margin: 0
@@ -10,7 +15,7 @@ body
         height: 70px
         border-radius: 7px
         margin-top: 152px
-        background-color: #FF3D00
+        background-color: $main-color
         color: #ffffff
         font-family: Roboto
         span
@@ -100,7 +105,7 @@ header
 
 .service
     min-height: 740px
-    background-color: #EDF2F6
+    background-color: $main-grey
     position: relative
     width: 100%
     &_img
@@ -140,7 +145,7 @@ header
             &_num
                 font-size: 64px
                 line-height: 109.71%
-                color:#FF3D00
+                color: $main-color
                 margin-left: 9px
                 position: absolute
             &::before
@@ -148,7 +153,7 @@ header
                 display: block
                 position: absolute
                 width: 3px
-                background-color: #FF3D00
+                background-color: $main-color
             &:nth-child(1)
                 &::before
                     height: 169px
@@ -219,7 +224,7 @@ header
         font-style: normal
         font-weight: 600
         font-size: 32px
-        color: #ff3d00
+        color: $main-color
         line-height: 130%
     &_descr
         text-align: center
@@ -227,7 +232,7 @@ header
         font-style: normal
         font-weight: 500
         font-size: 32px
-        color: #ff3d00
+        color: $main-color
         line-height: 130%
     &_wrapper
         margin-top: 80px
@@ -285,12 +290,12 @@ header
     position: static
     height: 570px
     width: 1445px
-    background: #EDF2F6
+    background: $main-grey
     padding-top: 58px
     .container
         margin-left: 26.4%
     &_heading
-        color: #FF3D00
+        color: $main-color
         font-family: 'Exo', sans-serif
         font-weight: 600
         font-size: 36px
@@ -331,7 +336,7 @@ header
                 display: flex
                 width: 70px
                 height: 70px
-                background-color: #FF3D00
+                background-color: $main-color
                 justify-content: center
                 align-items: center
                 border-radius: 100%
@@ -347,7 +352,7 @@ header
     position: relative
     height: 660px
     width: 1522px
-    background: #FF3D00
+    background: $main-color
     margin-left: 20%
     .container
         margin-left: 30%
@@ -385,7 +390,7 @@ header
     .dna
         position: absolute
         right: 236px
-        bottom: -850px
+        bottom: -852px
         mix-blend-mode: multiply
         z-index: 0
 
@@ -398,7 +403,7 @@ header
         font-size: 36px
         font-style: normal
         font-weight: 500
-        color: #FF3D00
+        color: $main-color
     &_wrapper
         margin-top: 95px
         display: flex
@@ -420,7 +425,7 @@ header
             content: ""
             display: block
             height: 6px
-            background: #FF3D00
+            background: $main-color
             width: 100%
             margin-top: 106px
         &::before
@@ -430,7 +435,7 @@ header
             height: 16px
             width: 16px
             border-radius: 100%
-            background: #FF3D00
+            background: $main-color
             margin-left: -9px
             margin-top: 129px
         &:nth-child(2)
@@ -440,7 +445,7 @@ header
                 width: 30px
                 height: 30px
                 border-radius: 100%
-                border: 7px solid #FF3D00
+                border: 7px solid $main-color
                 background: #fff
                 box-sizing: border-box
                 margin-left: -16px
@@ -464,12 +469,231 @@ header
             font-weight: bold
             font-size: 20px
             line-height: 22px
-            color: #FF3D00
-            border-right: 2px solid #FF3D00
+            color: $main-color
+            border-right: 2px solid $main-color
             padding-right: 10px
             margin-top: 56px
             margin-left: -133px
 
+.directions
+    margin-top: 14px
+    background: $main-grey
+    height: 959px
+    &_heading
+        font-family: 'Exo', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 36px
+        line-height: 130%
+        color: $main-color
+        text-align: center
+        padding-top: 60px
+    &_wrapper
+        font-family: 'Exo', sans-serif
+        margin-top: 62px
+        display: flex
+        position: relative
+        &_choice
+            width: 137px
+            ul
+                list-style: none
+            &_item
+                font-size: 18px
+                font-style: normal
+                font-weight: 700
+                line-height: 58px
+                color: $second-grey
+                display: relative
+                align-items: center
+                &:hover
+                    color: $main-color
+                    display: flex
+                    &::after
+                        content: ""
+                        display: block
+                        width: 137px
+                        height: 3px
+                        background: $main-color
+                        position: absolute
+                        margin-left: 150px
+                &:first-child
+                    color: $main-color
+                    display: flex
+                    &::after
+                        content: ""
+                        display: block
+                        width: 137px
+                        height: 3px
+                        background: $main-color
+                        position: absolute
+                        margin-left: 150px
+        &_block
+            background: $main-color
+            height: 480px
+            width: 1211px
+            position: absolute
+            margin-left: 310px
+            padding: 63px 0px 0px 100px
+            color: #fff
+            &_heading
+                font-size: 24px
+                font-style: normal
+                font-weight: 600
+                line-height: 32px
+            &_items
+                margin-top: 51px
+                padding-left: 17px
+            &_item
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: 45px
+            .get-access
+                position: absolute
+                background: #fff
+                color: #000
+                margin-top: 104px
+                .button-img
+                    &::before
+                        background: #000
+                    &::after
+                        border-right: 3px solid #000
+                        border-bottom: 3px solid #000
+
+.partners
+    background: $main-grey
+    &_wrapper
+        display: flex
+        flex-wrap: wrap
+        position: relative
+    &_block
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 23%
+        height: 177px
+        background: #ffffff
+        text-align: left
+        margin-bottom: 15px
+        &:nth-child(2),
+        &:nth-child(11)
+            background-color: #353535
+        &:nth-child(6)
+            background-color: #264098
+        &:nth-child(8)
+            background-color: #0E1F70
+        &:first-child
+            width: 48.6%
+            color: $main-color
+            display: block
+            background: inherit
+            align-self: center
+            h2
+                font-family: Exo, sans-serif
+                font-size: 36px
+                font-style: normal
+                font-weight: 700
+                line-height: 47px
+                margin-top: 50px    
+        &:last-child
+            background: $main-color
+            width: 86.998%
+            display: flex
+            position: absolute
+            bottom: 0
+            left: 570px
+            align-items: center
+            justify-content: flex-start
+            padding-left: 51px
+            .get-access
+                background: #fff
+                color: #000
+                margin: 0
+                .button-img
+                    &::before
+                        background: #000
+                    &::after
+                        border-right: 3px solid #000
+                        border-bottom: 3px solid #000
+
+        &:nth-child(2),&:nth-child(3),&:nth-child(7),&:nth-child(5),&:nth-child(6),&:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(13),&:nth-child(14),&:nth-child(15),&:nth-child(17),&:nth-child(18)
+            margin-left: 15px
+        &:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10),&:nth-child(11),&:nth-child(12),&:nth-child(13),&:nth-child(14),&:nth-child(15),&:nth-child(16),&:nth-child(17),&:nth-child(18)
+            margin-top: 15px
+        &:nth-child(1),&:nth-child(2),&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(8),&:nth-child(9),&:nth-child(10),&:nth-child(12),&:nth-child(13),&:nth-child(14),&:nth-child(16),&:nth-child(17)
+            margin-right: 15px
+
+.about
+    position: relative
+    height: 490px
+    background: $main-grey
+    padding-top: 58px
+    &_block
+        position: absolute
+        width: 1140px
+        height: 389px
+        background: #ffffff
+        left: 0
+        padding-left: 487.222px
+        display: flex
+        align-items: center
+        justify-content: center
+        &_image
+            position: absolute
+            top: -73px
+            left: 487.222px
+        &_text
+            color: #697885
+            font-family: Exo
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 33px
+            margin-left: 50px
+    &_name
+        position: absolute
+        top: 476px
+        margin-left: 871.444px   
+        h3
+            font-family: 'Exo', sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 28px
+        h3:first-child
+            font-style: normal
+            font-weight: 500
+
+footer
+    margin-bottom: 0
+    background: #2E2E2E
+    height: 137px
+    .footer
+        padding-top: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &_actions
+            display: flex
+            flex-wrap: wrap
+            width: 515px
+            a
+                color: $main-grey
+                font-family: Exo, sans-serif
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 28px
+            &_part
+                width: 40%
+                &:last-child
+                    margin-left: 88px
+        &_logo
+            font-family: Exo, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            color: $main-color
 
 
 
