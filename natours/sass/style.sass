@@ -6,14 +6,19 @@ $dg: #28b485
 *
     margin: 0
     padding: 0
-    box-sizing: border-box
+    box-sizing: inherit
+
+html
+    font-size: 62.5%
+
 body
     font-family: 'Lato', sans-serif
     font-weight: 400
     font-size: 16px
     line-height: 1.7
     color: #777
-    padding: 30px
+    padding: 3rem
+    box-sizing: border-box
 
 .header
     height: 95vh
@@ -27,11 +32,11 @@ body
     position: relative
 
     .logo
-        height: 35px
+        height: 3.5rem
         &-box
             position: absolute
-            top: 40px
-            left: 40px
+            top: 4rem
+            left: 4rem
     .text-box
         position: absolute
         left: 50%
@@ -42,20 +47,20 @@ body
         color: #ffffff
         text-transform: uppercase
         backface-visibility: hidden
-        margin-bottom: 60px
+        margin-bottom: 6rem
         &-main
             display: block
-            font-size: 60px
+            font-size: 6rem
             font-weight: 400
-            letter-spacing: 35px    
+            letter-spacing: 3.5rem  
             animation-name: moveInLeft
             animation-duration: 1s
             animation-timing-function: ease-out
         &-sub
             display: block
-            font-size: 20px
+            font-size: 2rem
             font-weight: 700
-            letter-spacing: 17.5px
+            letter-spacing: 1.75rem
             animation-name: moveInRight
             animation-duration: 1s
             animation-timing-function: ease-out
@@ -63,25 +68,25 @@ body
 @keyframes moveInLeft
     0%
         opacity: 0
-        transform: translateX(-100px)
+        transform: translateX(-10rem)
     80%
-        transform: translateX(10px)
+        transform: translateX(1rem)
     100%
         opacity: 1
         transform: translateX(0)
 @keyframes moveInRight
     0%
         opacity: 0
-        transform: translateX(100px)
+        transform: translateX(10rem)
     80%
-        transform: translateX(-10px)
+        transform: translateX(-1rem)
     100%
         opacity: 1
         transform: translateX(0)
 @keyframes moveInBottom
     0%
         opacity: 0
-        transform: translateY(30px)
+        transform: translateY(3rem)
     100%
         opacity: 1
         transform: translateX(0)
@@ -91,15 +96,16 @@ body
         position: relative
         text-transform: uppercase
         text-decoration: none
-        padding: 15px 40px
+        padding: 1.5rem 4rem
         display: inline-block
-        border-radius: 100px 
+        border-radius: 10rem
+        font-size: 1.6rem
     &::after
         content: ""
         display: inline-block
         height: 100%
         width: 100%
-        border-radius: 100px
+        border-radius: 10rem
         position: absolute
         top: 0
         left: 0
@@ -112,8 +118,8 @@ body
         opacity: 0
         transform: scaleX(1.4) scaleY(1.6)
     &:active
-        transform: translateY(-1px)
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2) 
+        transform: translateY(-.1px)
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2) 
     &-white
         background-color: #fff
         color: #777777
@@ -123,4 +129,18 @@ body
         animation: moveInBottom .5s ease-out .75s  
         animation-fill-mode: backwards
 
-    
+@media screen and ( min-width: 320px )
+    html
+        font-size: 26.5%
+@media screen and ( min-width: 480px )
+    html
+        font-size: 37.5%
+@media screen and ( min-width: 768px )
+    html
+        font-size: 48.5%
+@media screen and (min-width: 1024px) and ( max-width: 1200px )
+    html
+        font-size: 59.5%
+@media screen and (min-width: 1201px )
+    html
+        font-size: 62.5%
