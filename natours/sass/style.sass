@@ -31,39 +31,40 @@ body
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
     position: relative
 
-    .logo
+    &__logo
         height: 3.5rem
         &-box
             position: absolute
             top: 4rem
             left: 4rem
-    .text-box
+    &__text-box
         position: absolute
         left: 50%
         top: 40%
         transform: translate(-50%, -50%)
         text-align: center
-    .heading-primary
-        color: #ffffff
-        text-transform: uppercase
-        backface-visibility: hidden
-        margin-bottom: 6rem
-        &-main
-            display: block
-            font-size: 6rem
-            font-weight: 400
-            letter-spacing: 3.5rem  
-            animation-name: moveInLeft
-            animation-duration: 1s
-            animation-timing-function: ease-out
-        &-sub
-            display: block
-            font-size: 2rem
-            font-weight: 700
-            letter-spacing: 1.75rem
-            animation-name: moveInRight
-            animation-duration: 1s
-            animation-timing-function: ease-out
+.heading-primary
+    color: #ffffff
+    text-transform: uppercase
+    backface-visibility: hidden
+    margin-bottom: 6rem
+    &--main
+        display: block
+        font-size: 6rem
+        font-weight: 400
+        letter-spacing: 3.5rem  
+        animation-name: moveInLeft
+        animation-duration: 1s
+        animation-timing-function: ease-out
+    &--sub
+        display: block
+        font-size: 2rem
+        font-weight: 700
+        letter-spacing: 1.75rem
+        animation-name: moveInRight
+        animation-duration: 1s
+        animation-timing-function: ease-out
+        transform: translateX(-.7rem)
 
 @keyframes moveInLeft
     0%
@@ -82,7 +83,7 @@ body
         transform: translateX(-1rem)
     100%
         opacity: 1
-        transform: translateX(0)
+        transform: translateX(-.7rem)
 @keyframes moveInBottom
     0%
         opacity: 0
@@ -120,12 +121,12 @@ body
     &:active
         transform: translateY(-.1px)
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2) 
-    &-white
+    &--white
         background-color: #fff
         color: #777777
         &::after
             background-color: #fff
-    &-animated
+    &--animated
         animation: moveInBottom .5s ease-out .75s  
         animation-fill-mode: backwards
 
