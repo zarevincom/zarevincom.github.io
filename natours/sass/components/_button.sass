@@ -36,3 +36,22 @@
     &--animated
         animation: moveInBottom .5s ease-out .75s  
         animation-fill-mode: backwards
+
+.btn-text
+    &:link,
+    &:visited
+        font-size: $default-font-size
+        color: $mg
+        display: inline-block
+        text-decoration: none
+        border-bottom: 1px solid $mg
+        padding: 3px
+        transition: all .5s
+    &:hover
+        background-color: $mg
+        color: #fff
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .15)
+        transform: translateY(-2px)
+    &:active
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)
+        transform: translateY(-2px)
