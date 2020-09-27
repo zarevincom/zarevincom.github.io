@@ -37,7 +37,7 @@ body {
 }
 
 .contain__object:hover {
-    background-color: hotpink;
+    background-color: rgb(40,180,133);
     font-size: 2rem;
 }
 
