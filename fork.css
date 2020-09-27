@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-style: sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    background-color:#777;
+    padding: 1rem;
+}
+
+.container {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.contain__object {
+    width: 30%;
+    background-color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    border-radius: 1rem;
+    margin: 5%;
+    transition: all 1s;
+    color: honeydew;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.contain__object:hover {
+    background-color: hotpink;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+    }
+}
