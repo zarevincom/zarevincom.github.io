@@ -1,0 +1,222 @@
+//Variables
+$opensans: 'Open Sans', sans-serif
+$poppins: 'Poppins', sans-serif
+$raleway: 'Raleway', sans-serif
+
+$device_width: 100vw    
+$device_height: 100vh
+
+$container_width: calc(#{$device_width} - 39vw)
+
+$color-white: #ffffff
+$color-black: #000000
+$color-btn: #ff5f60
+*
+    padding: 0
+    margin: 0
+.--tac
+    text-align: center
+    
+html
+    font-size: 62.5% // 1rem
+    
+body
+    font-family: $opensans
+    font-weight: 600
+    box-sizing: border-box
+
+.container
+    width: $container_width
+    margin: 0 auto
+
+.hero
+    background-image: linear-gradient(90deg, rgba(101,0,255,1) 0%, rgba(114,21,255,1) 100%)
+    padding-top: 50px
+    height: 80vh
+    &__header
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+.logo
+    width: 50vw
+    &--desktop
+        width: 10rem
+    &--mobile
+        display: none
+.nav 
+    width: 50vw 
+    font-family: $raleway
+    font-size: 1.8rem
+    color: $color-white
+    ul
+        display: flex
+        justify-content: space-between
+        align-items: center
+    li
+        display: inline-block
+        justify-content: space-between
+        font-style: medium
+
+.about
+    margin-top: 15vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $color-white
+    &__desc
+        width: calc(#{$device_width} - 50%)
+        h1
+            font-size: 7rem
+            font-weight: bold
+            margin: 0 0 2vh -.3vh
+        p
+            font-size: 1.7rem
+            font-weight: 600
+            margin-bottom: 3.5vh
+            width: 90%
+    &__image
+        width: calc(#{$device_width} - 50%)
+        position: relative
+        display: block
+        >img
+            width: 100%
+
+.apply-form
+    width: calc(#{$container_width} - 71%)
+    display: inline-block
+    padding: 4vh 1vw 4vh 1vw
+    background: $color-btn
+    margin-top: 3vh
+    color: $color-white
+    font-family: $poppins
+    font-weight: 400
+    border-radius: 4%
+    border-top: 1.5vh solid #183251
+    h2
+        font-size: 3rem
+        position: relative
+        &::after
+            content: ""
+            display: block
+            position: absolute
+            width: calc(calc(#{$container_width} - 74%) / 13.8)
+            height: 1px
+            background: $color-white
+            left: 50%
+            margin-top: .5vh
+            transform: translateX(-50%) translateY(50%)
+    p
+        margin-top: 3vh
+        font-size: 1.5rem
+        opacity: .6
+    
+    .__form-group
+        position: relative
+        display: flex
+        width: 10vw
+        margin: 3vh auto
+        & > span, .form-field
+            display: block
+            &:not(:first-child):not(:last-child)
+                border-radius: 0
+            &:first-child 
+                border-radius: 100px 0 0 100px
+            &:last-child 
+                border-radius: 0 100px 100px 0
+            &:not(:first-child) 
+                margin-left: -1px
+        & > span
+            text-align: center
+            padding: 8px 12px
+            font-size: 14px
+            line-height: 25px
+            color: white
+            background: #1f3148
+            display: flex
+            justify-content: center
+            align-items: center
+        .form-field
+            position: relative
+            z-index: 1
+            flex: 1 1 auto
+            width: 1%
+            margin-top: 0
+            margin-bottom: 0
+            padding: 2vh 1vw 2vh 1vw
+            border: none
+.btn
+    display: inline-block
+    padding: 1vh 2.5vh 1vh 2.5vh
+    background: $color-btn
+    font-family: $raleway
+    border-radius: 100px
+    color: $color-white
+    text-decoration: none
+    text-align: center
+    font-size: 1.8rem
+    &--signin
+        font-weight: 400
+    &--read
+        font-weight: 700
+        margin-top: 3vh
+
+
+@media screen and (max-width: 540px)
+    .container
+        width: calc(#{$device_width} - 20vw)
+    .logo
+        width: 100%
+        &--desktop
+            display: none
+        &--mobile
+            width: 3rem
+            display: block
+            margin: 0 auto
+    .nav
+        display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // .img-desc
+        //     position: absolute
+        //     display: flex
+        //     justify-content: space-between
+        //     align-items: center
+        //     flex-direction: column
+        //     width: auto
+        //     height: auto
+        //     font-family: $poppins
+        //     font-size: .665vw
+        //     font-weight: 600
+        //     color: $color-white
+            // &--1
+            //     color: $color-black
+            //     transform: translateX(16vw) translateY(-20.5vw) rotate(-11deg)
+            // &--2
+            //     transform: translateX(14.7vw) translateY(-12.5vw)
+            // &--3
+            //     transform: translateX(24.3vw) translateY(-13.5vw) rotate(16deg)
+            // &--4
+            //     transform: translateX(8.3vw) translateY(-5.5vw)
+            //     width: 111px
+            // &--5
+            //     transform: translateX(15.95vw) translateY(-5.5vw)
+            //     width: 111px
+            // &--6
+            //     transform: translateX(23.15vw) translateY(-5.5vw)
+            //     width: 129px
