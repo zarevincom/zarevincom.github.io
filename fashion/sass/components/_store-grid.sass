@@ -1,0 +1,26 @@
+.store-grid
+    margin-top: 12rem
+    &__wrapper
+        display: grid
+        grid-template-areas: "d d f f" "a b f f"
+        grid-gap: 1.5rem 1.5rem
+        height: 55rem
+
+    &__item
+        &:last-child
+            grid-area: f
+            background: url('../images/grid/photo4.png') center center/cover no-repeat
+            display: flex
+            flex-direction: column-reverse
+            justify-content: flex-start
+            align-items: flex-start
+            padding: 3rem
+        &:nth-child(3)
+            grid-area: b
+            background: url('../images/grid/photo3.png') center center/cover no-repeat
+        &:nth-child(2)
+            grid-area: a
+            background: url('../images/grid/2photo.jpg') center center/cover no-repeat
+        &:first-child
+            grid-area: d
+            background: url('../images/grid/1photo.jpg') center center/cover no-repeat
