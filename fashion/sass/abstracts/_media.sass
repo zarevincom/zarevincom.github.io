@@ -2,16 +2,32 @@
 
 @media screen and ( max-width:  480px)
     html
-        font-size: 17%
+        font-size: 14%
 
 @media screen and ( min-width:  481px) and ( max-width:  768px)
     html
-        font-size: 25%
+        font-size: 22%
 
-@media screen and ( min-width:  769px) and ( max-width:  960px)
+@media screen and ( min-width:  769px) and ( max-width:  1400px)
     html
         font-size: 35%
 
-@media screen and ( min-width:  961px)
+@media screen and ( min-width:  1401px)
     html
-        font-size: 46.5%
+        font-size: 62.5%
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+    .hero-banner
+        &__header
+            background: url('../images/hero/background-retina.jpg') center (center/cover) no-repeat
+
+    .store-grid
+        &__item
+            &:last-child
+                background: url('../images/grid/4retina.png') center center/cover no-repeat
+            &:nth-child(3)
+                background: url('../images/grid/3retina.png') center center/cover no-repeat
+            &:nth-child(2)
+                background: url('../images/grid/2retina.jpg') center center/cover no-repeat
+            &:nth-child(1)
+                background: url('../images/grid/1retina.jpg') center center/cover no-repeat
