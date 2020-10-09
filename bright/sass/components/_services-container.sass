@@ -1,0 +1,51 @@
+.services-container
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    overflow: hidden
+    gap: 1.5rem
+    color: $color-grey
+    &__item
+        min-height: 36rem
+        flex: 30%
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        padding: 4.5rem
+        position: relative
+        &:first-child
+            .services-container__img
+                background-image: url('../img/1vector.png')
+        &:nth-child(2)
+            .services-container__img
+                background-image: url('../img/2vector.png')
+        &:nth-child(3)
+            .services-container__img
+                background-image: url('../img/3vector.png')
+        &:nth-child(5)
+            .services-container__img
+                background-image: url('../img/4vector.png')
+        &:nth-child(6)
+            .services-container__img
+                background-image: url('../img/5vector.png')
+
+    
+
+    &__img
+        width: 13rem
+        height: 11rem
+        background-size: cover
+    
+    &__title
+        font-size: 1.8rem
+        font-weight: 500
+        line-height: 5.6rem
+        margin: 3rem 0
+
+    &__descr
+        font-size: 1.6rem
+        font-weight: 400
+        line-height: 2.5rem
+        margin-bottom: 3rem
