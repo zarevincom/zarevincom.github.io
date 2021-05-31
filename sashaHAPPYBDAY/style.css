@@ -1,0 +1,84 @@
+body {
+  padding: 40px;
+  background-color: #121212;
+  position: relative;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: 10px;
+  display: block;
+}
+p.second {
+  margin-top: 60px;
+}
+p.third {
+  margin-top: 90px;
+}
+p.fourth {
+  margin-top: 120px;
+}
+p.fifth {
+  margin-top: 150px;
+}
+p.message {
+  top: 600px;
+  transform: translate(-10%);
+  left: -50%;
+  position: absolute;
+}
+.hoverBlock {
+  top: 650px;
+  transform: translate(-50%);
+  left: 66%;
+  position: absolute;
+}
+.hoverBlock p {
+  color: #121212;
+}
+
+/* Animation */
+p.first {
+  animation: animated-text 5s steps(100, end) 1s 1 normal both;
+}
+p.second {
+  animation: animated-text 5s steps(100, end) 6s 1 normal both;
+}
+p.third {
+  animation: animated-text 5s steps(100, end) 11s 1 normal both;
+}
+p.fourth {
+  animation: animated-text 5s steps(100, end) 16s 1 normal both;
+}
+p.fifth {
+  animation: animated-text 5s steps(100, end) 21s 1 normal both;
+}
+
+.message {
+  animation: helloText 3s ease-in 26s forwards;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 1200px;
+  }
+}
+
+@keyframes helloText {
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 50%;
+  }
+}
